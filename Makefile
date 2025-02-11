@@ -10,4 +10,4 @@ start-front:
 
 # Run both commands in parallel
 all:
-	make start-back & make start-front
+	make start-front & make start-back 
