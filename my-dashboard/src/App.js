@@ -116,6 +116,7 @@ const Dashboard = () => {
           </BarChart>
         </ResponsiveContainer>
       </div>
+      {currentRegion}
     </div>
       </div>
 
