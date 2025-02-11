@@ -26,7 +26,7 @@ const Dashboard = () => {
   const [currentRegion, setCurrentRegion] = useState("world");
 
   useEffect(() => {
-    const socket = io("http://161.35.56.24:4000");
+    const socket = io("http://161.35.56.246:4000/");
 
     socket.on("populationData", (newData) => {
       setData(prevData => {
@@ -48,7 +48,7 @@ const Dashboard = () => {
   }, []);
 
   const changeRegion = (region) => {
-    const socket = io("http://161.35.56.24:4000");
+    const socket = io("http://161.35.56.246:4000/");
     socket.emit("changeRegion", region);
     setCurrentRegion(region);
     setData([]);
